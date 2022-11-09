@@ -10,8 +10,7 @@ import meter1 from "./meter1.svg";
 import meter2 from "./meter2.svg";
 import meter3 from "./meter3.svg";
 import navIcon1 from "./nav-icon1.svg";
-import navIcon2 from "./nav-icon2.svg";
-import navIcon3 from "./nav-icon3.svg";
+import navIcon2 from "./nav-icon3.svg";
 import projectImg1 from "./project-img1.png";
 import projectImg2 from "./project-img2.png";
 import projectImg3 from "./project-img3.png";
@@ -31,7 +30,6 @@ export {
   meter3,
   navIcon1,
   navIcon2,
-  navIcon3,
   projectImg1,
   projectImg2,
   projectImg3,

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { reactLogo, navIcon1, navIcon2, navIcon3 } from "../assets";
+import { reactLogo, navIcon1, navIcon2 } from "../assets";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -64,14 +64,19 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={navIcon1} alt="" />
+              <a
+                href="https://www.linkedin.com/in/jessicaoyaks/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={navIcon1} alt="linkedin" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={navIcon2} alt="" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={navIcon3} alt="" />
+              <a
+                href="https://www.instagram.com/jessy_oyaks/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={navIcon2} alt="instagram" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
