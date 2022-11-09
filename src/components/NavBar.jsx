@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/react.svg";
+import { reactLogo, navIcon1, navIcon2, navIcon3 } from "../assets";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -27,7 +27,7 @@ function NavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="" />
+          <img src={reactLogo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
@@ -65,13 +65,13 @@ function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="" alt="" />
+                <img src={navIcon1} alt="" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="" alt="" />
+                <img src={navIcon2} alt="" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="" alt="" />
+                <img src={navIcon3} alt="" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
