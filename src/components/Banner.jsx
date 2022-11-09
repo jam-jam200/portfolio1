@@ -6,7 +6,7 @@ import { headerImg } from "../assets";
 function Banner() {
   const [loopNumber, setLoopNumber] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const wordToRotate = ["I Am A Junior Frontend Developer", "And A Junior Software tester"];
+  const wordToRotate = [" A Junior Frontend Developer", "And A Junior Software Tester"];
   const [text, setText] = useState("");
   const [letter, setLetter] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -50,7 +50,7 @@ function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my portfolio!</span>
+            <span className="tagline text-capitalize">Welcome to my portfolio!</span>
             <h1>
               {`Hello I'm Jessica Oyakhilome `} <br />
               <span className="wrap">{text}</span>
