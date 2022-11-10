@@ -38,9 +38,9 @@ function Contact() {
     setFormDetails(formInitialDetails);
 
     if (result.code === 200) {
+      setStatus({ success: false, message: "Message not sent, try again later" });
+    } else {
       setStatus({ success: true, message: "Message sent successfully" });
-    }else {
-      setStatus({success: false, message: "Something went wrong😓, please try again later"})
     }
   };
 
