@@ -66,7 +66,7 @@ function Banner() {
                     Welcome to my portfolio!
                   </span>
                   <h1>
-                    {`Hello I'm Jessica Oyakhilome `} <br />
+                    {`Hello I'm Jessica `} <br />
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
