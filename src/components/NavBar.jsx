@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { reactLogo, navIcon1, navIcon2 } from "../assets";
+import { Contact } from "../components";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -21,6 +22,10 @@ function NavBar() {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+  };
+
+  const handleClick = (href) => {
+    href = "#contact";
   };
 
   return (
@@ -79,7 +84,7 @@ function NavBar() {
                 <img src={navIcon2} alt="instagram" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button className="vvd" onClick={handleClick}>
               <span>let's connect</span>
             </button>
           </span>
