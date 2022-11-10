@@ -72,9 +72,6 @@ function Projects() {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item>
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
@@ -85,13 +82,6 @@ function Projects() {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <Row>
-                    {projects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
                   <Row>
                     {projects.map((project, index) => (
                       <ProjectCard key={index} {...project} />
